@@ -25,7 +25,18 @@ private:
 	uint32_t status;
 
 public:
-	Arinc825Word(T value, LogicalCommunical)
+	Arinc825Word(T value, LogicalCommunicationChannel lcc);
+
+	Arinc825Word(T value, uint32_t status);
+
+	T getValue() const { return value; }
+	uint32_t getStatus() const { return status; }
+
+	LogicalCommunicationChannel getLogicalCommunicationChanel() const;
+
+	uint8_t getClientFunctionId() const;
+
+	void setClientFunctionId(uint8_t id);
 };
 
 

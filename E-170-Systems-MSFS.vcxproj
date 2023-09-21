@@ -159,6 +159,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="systems\shared\arinc825.cpp" />
     <ClCompile Include="systems\shared\arinc429.cpp" />
     <ClCompile Include="dependencies\glm\detail\glm.cpp" />
     <ClCompile Include="E170_systems\air_conditioning.cpp" />
@@ -193,6 +194,7 @@
     <ClCompile Include="systems\simulation\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="systems\shared\arinc825.h" />
     <ClInclude Include="systems\shared\arinc429.h" />
     <ClInclude Include="dependencies\glm\common.hpp" />
     <ClInclude Include="dependencies\glm\detail\compute_common.hpp" />
@@ -533,6 +535,7 @@
     <ClInclude Include="systems\simulation\Test.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include="dependencies\glm\detail\func_common.inl" />
     <None Include="dependencies\glm\detail\func_common_simd.inl" />
     <None Include="dependencies\glm\detail\func_exponential.inl" />
