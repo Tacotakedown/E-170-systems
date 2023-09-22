@@ -31,13 +31,42 @@ public:
 
 	T getValue() const { return value; }
 	uint32_t getStatus() const { return status; }
-
 	LogicalCommunicationChannel getLogicalCommunicationChanel() const;
 
 	uint8_t getClientFunctionId() const;
-
 	void setClientFunctionId(uint8_t id);
+
+	uint8_t getSourceFunctionId() const;
+	void setSourceFunctionId(uint8_t id);
+
+	bool isServiceMessageType() const;
+	void setSericeMessageType(bool serviceType);
+
+	bool isLocalBusOnly() const;
+	void setLocalBusOnly(bool local);
+
+	bool isPrivateData() const;
+	void setPrivateData(bool privateData);
+
+	uint16_t getNodeId() const;
+	void setNodeId(uint16_t id);
+
+	uint8_t getServerFunctionId() const;
+	void setServerFunctionId(uint8_t id);
+
+	uint8_t getServerId() const;
+	void setServerId(uint8_t id);
+
+	uint16_t getDataObjectCode() const;
+	void setDataObjectCode(uint16_t code);
+
+	uint8_t getRedundancyChannelId() const;
+	void setRecundancyChannelId(uint8_t channel);
+
 };
+
+Arinc825Word<uint32_t> double_to_arinc825(double value);
+double arinc825_to_double(const Arinc825Word<uint32_t>& word);
 
 
 #endif // !ARINC825_H
