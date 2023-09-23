@@ -161,6 +161,8 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="systems\failures\failures_module.cpp" />
+    <ClCompile Include="systems_wasm\NamedVariable.cpp" />
     <ClCompile Include="systems\shared\low_pass_filter.cpp" />
     <ClCompile Include="systems\shared\pid.cpp" />
     <ClCompile Include="systems\shared\arinc825.cpp" />
@@ -198,6 +200,8 @@
     <ClCompile Include="systems\simulation\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="systems\failures\failures_module.h" />
+    <ClInclude Include="systems_wasm\NamedVariable.h" />
     <ClInclude Include="systems\shared\low_pass_filter.h" />
     <ClInclude Include="systems\shared\pid.h" />
     <ClInclude Include="systems\shared\arinc825.h" />
@@ -536,6 +540,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="systems\shared\random.h" />
     <ClInclude Include="systems\simulation\Simulation.h" />
+    <ClInclude Include="systems_wasm\failures.h" />
     <ClInclude Include="systems_wasm\msfs.h" />
     <ClInclude Include="systems\simulation\Update_Context.h" />
     <ClInclude Include="systems\simulation\Test.h" />
